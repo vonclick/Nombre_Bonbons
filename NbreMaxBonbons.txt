@@ -1,0 +1,19 @@
+début nbreBonbonsPrix (réel argent, réel prix )
+
+    entier nbreMaxBonbons  ← 0
+    reel   resteArgent     ← argent
+    
+    Si argent > 0 ET prix > 0
+
+        Tant que resteArgent >= prix
+           resteArgent    ← resteArgent - prix
+           nbreMaxBonbons ← nbreMaxBonbons + 1
+        Fin Tant que
+
+    Sinon
+        nbreMaxBonbons  ← -1
+    Fin Si
+
+    retourner nbreMaxBonbons 
+
+fin nbreBonbonsPrix
